@@ -91,7 +91,7 @@ class ServerlessWebpackPrisma {
     const command =
       this.getPackageManager() === 'npm'
         ? `npm install ${params}${packageName}${version}`
-        : `yarn add ${params}${packageName}`;
+        : `yarn add ${params}${packageName}${version}`;
     childProcess.execSync(command, { cwd });
   }
 
